@@ -1,104 +1,105 @@
 :root {
-    --background:  linear-gradient(to bottom, #0F0F3F, #3F37C9);
-    --titulo: #00E5FF;
-    --bg-color: #1B1962;
-    --button: #00e5ff61;
-    --border: #00E5FF;
-    --txt: #D9D9D9;
-    --hover: #00000064;
-    --shadow-hover: #ff4dff6f;
+  --background: linear-gradient(to bottom, #0f0f3f, #3f37c9);
+  --titulo: #00e5ff;
+  --bg-color: #1b1962;
+  --button: #00e5ff61;
+  --border: #00e5ff;
+  --txt: #ffffff;
+  --hover: #00000064;
+  --shadow-hover: #ff4dff6f;
 }
 
-
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    height: 100%;
-    background: var(--background);
-    background-size: cover;
+  height: 100%;
+  background: var(--background);
+  background-size: cover;
 }
 
 main section img {
-    display: flex;
-    margin: auto;
-    margin-top: 50px;
-    width: 250px;
-    height: 250px;
-    border-radius: 25px 25px 0 25px;
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  width: 250px;
+  height: 250px;
+  border-radius: 25px 25px 0 25px;
 }
 
 main section .h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    background: var(--titulo);
-    border-radius: 30px;
-    margin-top: 20px;
-    width: 150px;
-    height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: var(--titulo);
+  border-radius: 30px;
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
 }
 
 main section .h1 h1 {
-    font-size: 1em;
-    font-weight: 800;
-    color: var(--bg-color);
+  font-size: 1em;
+  font-weight: 800;
+  color: var(--bg-color);
 }
 
 main section .button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 60px;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  gap: 30px;
 }
 
-main section .button button {
-    width: 250px;
-    height: 70px;
-    cursor: pointer;
-    border-radius: 40px;
-    background: var(--button);
-    border: 3px solid var(--border);
-    box-shadow: 2px 2px 10px var(--hover);
-    transition: all 0.3s ease;
+main section .button a {
+  width: 250px;
+  height: 70px;
+  cursor: pointer;
+  border-radius: 40px;
+  background: var(--button);
+  border: 3px solid var(--border);
+  transition: all 0.3s ease;
+
+  text-decoration: none;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: var(--txt);
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
-main section .button button:hover {
-    box-shadow: 2px 2px 10px var(--shadow-hover);
-    transform: translateY(-4px);
-}
-
-main section .button button a {
-    text-decoration: none;
-    font-size: 1.25em;
-    font-weight: bold;
-    color: var(--txt);
-}
-
-main section .button button a:hover {
-    color: var(--bg-color);
+main section .button a:hover {
+  color: var(--bg-color);
+  box-shadow: 3px 3px 10px var(--shadow-hover);
+  transform: translateY(-4px);
 }
 
 .form {
   width: 350px;
-  height: 460px;
+  height: 510px;
   background: var(--button);
   border-radius: 30px;
   margin: 0 auto;
   padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.form:hover {
+  transform: translateY(-4px);
+  box-shadow: 3px 3px 10px var(--shadow-hover);
 }
 
 .form h2 {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
   color: var(--txt);
@@ -111,8 +112,10 @@ main section .button button a:hover {
   margin-bottom: 15px;
 }
 
-/* Inputs e textarea */
-.form-group input, .form-group select, .form-group textarea {
+
+.form-group input,
+.form-group select,
+.form-group textarea {
   border: 2px solid var(--border);
   background-color: var(--button);
   color: var(--bg-color);
@@ -125,42 +128,93 @@ main section .button button a:hover {
 }
 
 .form-group select {
-    text-align: center;
+  text-align: center;
 }
 
-/* Placeholder mais clarinho */
-.form-group input::placeholder, .form-group textarea::placeholder {
+.form-group input::placeholder,
+.form-group textarea::placeholder {
   color: var(--bg-color);
   font-weight: bold;
 }
 
-/* Foco */
-.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
   border-color: var(--shadow-hover);
   background-color: var(--button);
   color: var(--bg-color);
 }
 
-/* Botão */
 .btn {
-    display: flex;
-    margin: auto;
-    text-align: center;
-    border: 3px solid var(--border);
-    background-color: var(--border);
-    color: var(--bg-color);
-    padding: 12px 20px;
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: 1rem;
-    cursor: pointer;
-    width: 100px;
-    height: 50px;
-    transition: 0.3s;
-    box-shadow: 3px 3px 3px var(--hover);
+  display: flex;
+  margin: auto;
+  text-align: center;
+  border: 3px solid var(--border);
+  background-color: var(--border);
+  color: var(--bg-color);
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  transition: 0.3s;
+  box-shadow: 3px 3px 3px var(--hover);
 }
 
 .btn:hover {
-box-shadow: 3px 3px 3px var(--shadow-hover);  
-transform: translateY(-2px);
+  box-shadow: 3px 3px 3px var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.linha-decorativa {
+  width: 80vw;
+  height: 2px;
+  background: var(--txt);
+  margin: 50px auto 50px;
+  position: relative;
+}
+
+.linha-decorativa::before,
+.linha-decorativa::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: var(--txt);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.linha-decorativa::before {
+  left: 0;
+}
+
+.linha-decorativa::after {
+  right: 0;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  gap: 5px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 50%;
+  color: var(--border);
+}
+
+footer {
+    text-align: center;
+    margin: 20px;
+    color: var(--txt);
 }
