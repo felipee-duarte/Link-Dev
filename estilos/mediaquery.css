@@ -1,0 +1,165 @@
+/*Typical Device Breakpoints
+
+    Pequenas telas: até 600px
+    celular: de 600px até 768
+    Tablet: 768px até 992px
+    Desktop: 992px até 1200px
+    Telas grandes: acima de 1200px
+
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    main section img {
+        width: 300px;
+        height: 300px;
+    }
+
+    main section .h1 {
+        width: 200px;
+        height: 50px;
+        font-size: 1.5em;
+    }
+
+    main section .button a {
+        width: 300px;
+        height: 80px;
+        font-size: 1.5em;
+    }
+
+    .form {
+        width: 50vw;
+        height: auto;
+    }
+
+    .form h2 {
+        font-size: 1.5em;
+    }
+
+    .form-group input,
+.form-group select,
+.form-group textarea {
+    font-size: 1.25em;
+}
+
+.btn {
+    font-size: 1.25em;
+    width: 120px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links {
+    font-size: 2.5em;
+    gap: 20px;
+}   
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    main section img {
+        width: 350px;
+        height: 350px;
+    }
+
+    main section .h1 {
+        width: 200px;
+        height: 50px;
+        font-size: 1.5em;
+    }
+
+    main section .button {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section .button a {
+        width: 300px;
+        height: 80px;
+        font-size: 1.5em;
+    }
+
+    .form {
+        width: 50vw;
+        height: auto;
+    }
+
+    .form h2 {
+        font-size: 1.5em;
+    }
+
+    .form-group input,
+.form-group select,
+.form-group textarea {
+    font-size: 1.25em;
+}
+
+.btn {
+    font-size: 1.25em;
+    width: 120px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links {
+    font-size: 2.5em;
+    gap: 20px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+    main section img {
+        width: 350px;
+        height: 350px;
+    }
+
+    main section .h1 {
+        width: 200px;
+        height: 50px;
+        font-size: 1.5em;
+    }
+
+    main section .button {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section .button a {
+        width: 300px;
+        height: 80px;
+        font-size: 1.5em;
+    }
+
+    .form {
+        width: 50vw;
+        height: auto;
+    }
+
+    .form h2 {
+        font-size: 1.5em;
+    }
+
+    .form-group input,
+.form-group select,
+.form-group textarea {
+    font-size: 1.25em;
+}
+
+.btn {
+    font-size: 1.25em;
+    width: 120px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links {
+    font-size: 2.5em;
+    gap: 20px;
+}
+}
+
+
