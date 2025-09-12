@@ -24,7 +24,7 @@ body {
   background-size: cover;
 }
 
-main section .projetos {
+main section {
   display: flex;
   flex-direction: column;
 }
@@ -48,7 +48,7 @@ main section .cards:hover {
 }
 
 main section .cards img {
-    display: flex;
+    display: block;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 10px;

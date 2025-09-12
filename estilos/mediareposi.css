@@ -84,11 +84,19 @@
     }
 
     main section .cards h2 {
+        text-align: center;
+        margin: auto;
+        width: 200px;
         font-size: 2em;
+
     }
 
     main section .cards p {
+        margin: auto;
+        width: 400px;
         font-size: 1.5em;
+
+
     }
 
     main section .button a {
