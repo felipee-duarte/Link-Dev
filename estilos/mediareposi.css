@@ -9,99 +9,48 @@
 */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    main section .projetos {
-        flex-direction: row;
-    }
 
-    main section .cards {
-        width: 350px;
-        height: 450px;
-    }
+  .card {
+    flex-direction: row; /* img e texto lado a lado */
+  }
 
-    main section .cards img {
-        width: 300px;
-        height: 200px;
-    }
+  .card img {
+    width: 40%; /* ocupa menos espaço */
+  }
 
-    main section .cards h2 {
-        font-size: 1.5em;
-    }
-
-    main section .cards p {
-        font-size: 1em;
-    }
-
-    main section .button a {
-        width: 300px;
-        height: 80px;
-        font-size: 1.5em;
-    }
+  .card-content {
+    width: 60%;
+  }
 }
 
+
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-    main section .projetos {
-        flex-direction: row;
-    }
+.card {
+    flex-direction: row-reverse; /* inverte a ordem */
+  }
 
-    main section .cards {
-        width: 45vw;
-        height: 500px;
-    }
+  .card img {
+    width: 50%;
+  }
 
-    main section .cards img {
-        width: 300px;
-        height: auto;
-    }
-
-    main section .cards h2 {
-        font-size: 2em;
-    }
-
-    main section .cards p {
-        font-size: 1.5em;
-    }
-
-    main section .button a {
-        width: 300px;
-        height: 80px;
-        font-size: 1.5em;
-    }
+  .card-content {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    main section .projetos {
-        flex-direction: row;
-    }
+  .card {
+    flex-direction: row-reverse; /* inverte a ordem */
+  }
 
-    main section .cards {
-        width: 40vw;
-        height: 500px;
-    }
+  .card img {
+    width: 50%;
+  }
 
-    main section .cards img {
-        width: 300px;
-        height: auto;
-    }
-
-    main section .cards h2 {
-        text-align: center;
-        margin: auto;
-        width: 200px;
-        font-size: 2em;
-
-    }
-
-    main section .cards p {
-        margin: auto;
-        width: 400px;
-        font-size: 1.5em;
+  .card-content {
+    width: 50%;
+  }
 
 
-    }
-
-    main section .button a {
-        width: 300px;
-        height: 80px;
-        font-size: 1.5em;
-    }
 }
