@@ -13,14 +13,13 @@ app.post("/enviar", async (req, res) => {
   try {
     // Configura o transporte do e-mail
     let transporter = nodemailer.createTransport({
-      service: "gmail", // pode trocar por Outlook, Yahoo etc
+      service: "gmail",
       auth: {
         user: "felipeds250x@gmail.com",
         pass: "kpitdqncvpxtbvax"
       }
     });
 
-    // Configura o conteúdo do e-mail
     let mailOptions = {
       from: email,
       to: "felipeds250x@gmail.com",

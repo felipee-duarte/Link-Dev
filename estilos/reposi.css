@@ -24,99 +24,10 @@ body {
   background-size: cover;
 }
 
-/*main section {
-  display: flex;
-  flex-direction: column;
-}
-
-main section .cards {
-    display: flex;
-    margin: auto;
-    margin-top: 50px;
-    padding: 10px;
-    flex-direction: column;
-    width: 300px;
-    height: 420px;
-    background: var(--card);
-    border-radius: 30px;
-    transition: all 0.3s ease;
-}
-
-main section .cards:hover {
-    box-shadow: 3px 3px 10px var(--shadow-hover);
-    transform: translateY(-4px);
-}
-
-main section .cards img {
-    display: block;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    width: 250px;
-    height: 175px;
-    border-radius: 20px;  
-}
-
-main section .cards h2 {
-    font-size: 1.25em;
-    text-align: center;
-}
-
-main section .cards p {
-    color: var(--txt);
-    text-align: center;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-main section div .links-social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-
-main section .cards .links-social img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 15px;
-  padding: 16px;
-  width: 80px;
-  height: 80px;
-  color: var(--border);
-}
-
-main section .button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-  margin-bottom: 60px;
-  gap: 30px;
-}
-
-main section .button a {
-  width: 250px;
-  height: 70px;
-  cursor: pointer;
-  border-radius: 40px;
-  background: var(--button);
-  border: 3px solid var(--border);
-  
-
-  text-decoration: none;
-  font-size: 1.25em;
-  font-weight: bold;
-  color: var(--txt);
-  justify-content: center;
-  align-items: center;
-  display: flex;
-} */
-
-/* CSS */
 .cards {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 30px;
   padding: 20px;
@@ -124,29 +35,43 @@ main section .button a {
 
 .card {
   display: flex;
-  flex-direction: column; /* padrão mobile */
-  background: #fff;
+  width: 70vw;
+  flex-direction: column;
+  background: var(--card);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px var(--shadow-hover);
+  transform: translateY(-4px);
 }
 
 .card img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
 }
 
 .card-content {
   padding: 20px;
+  padding-bottom: 5px;
 }
 
 .card-content h2 {
   margin-bottom: 10px;
+  color: var(--bg-color);
 }
 
 .card-content p {
   margin-bottom: 15px;
+  color: var(--txt);
 }
 
 .card-content .links {
@@ -157,15 +82,36 @@ main section .button a {
 .card-content .links a {
   text-decoration: none;
   color: white;
-  background: #3F37C9;
-  padding: 8px 14px;
+  padding: 0px 10px;
   border-radius: 6px;
   transition: 0.3s;
 }
 
-.card-content .links a:hover {
-  background: #2a2699;
+.card-content .links a img {
+  width: 40px;
+  height: 40px;
+  transition: all 0.4s ease;
 }
 
-/* Tablet */
+.card-content .links a img:hover {
+  transform: scale(1.3);
+  filter: drop-shadow(10px 10px 10px var(--shadow-hover));
+}
 
+.button a {
+  width: 250px;
+  height: 70px;
+  cursor: pointer;
+  border-radius: 40px;
+  background: var(--button);
+  border: 3px solid var(--border);
+  transition: all 0.3s ease;
+
+  text-decoration: none;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: var(--txt);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
